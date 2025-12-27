@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>html大学习</title>
+        <link rel="stylesheet" href="../../assets/postsPagesTheme.css" />
+        <link rel="stylesheet" href="../../assets/prism-default.css" />
+        <script src="../../assets/prism.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="mainlogo">Ada的博客</div>
+                <ul>
+                    <li>
+                        <a href=""><img src="../../assets/html5.png" />HTML</a>
+                    </li>
+                    <li>
+                        <a href=""><img src="../../assets/css3.png" />CSS</a>
+                    </li>
+                    <li><a href=""></a></li>
+                </ul>
+                <a href=""></a>
+            </header>
+
+            <main>
+                <aside>
+                    <nav>
+                        <ul>
+                            <li><a href="#headcontent">头文件</a></li>
+                            <li><a href="#article">文本</a></li>
+                            <li><a href="#link">链接</a></li>
+                            <li><a href="#media">媒体</a></li>
+                            <li><a href="#sheet">表格</a></li>
+                            <li><a href="#form">表单</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+                <nav></nav>
+
+                <article>
+                    <h2 id="headcontent">头文件</h2>
+                    <div class="codediv">
+                        <pre>
+                    <code class="language-html">
+&lt!DOCTYPE html&gt
+&lthtml lang="zh-CN"&gt
+&lthead&gt
+    &ltmeta charset="UTF-8"&gt
+    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt
+    &lttitle&gtDocument&lt/title&gt
+&lt/head&gt
+&ltbody&gt
+&lt/body&gt
+&lt/html&gt
+                </code>
+            </pre>
+                    </div>
+
+                    <h2 id="article">文本</h2>
+                    <p>html语义标签</p>
+                    <p>
+                        b :通常显示为粗体的文本. i :通常显示为斜体的文本. u
+                        :通常显示为带下划线的文本. small :使用小字号显示的文本.
+                        sub :下标. sup :上标 em : 斜体 strong : 粗体 code :
+                        使用宽体字体 samp : 示例文本 宽体字体显示 kdb :
+                        这个标签标示需要用户输入的文本,也用等宽字体显示 var :
+                        这个标签标示需要用实际值替换的变量或其他实体的名称 dfn :
+                        cite : abbr : pre hr: 水平分割线 address blockquote
+                    </p>
+                    <ul>
+                        <li>h1 h2 h3 h4 h5 h6 h7</li>
+                    </ul>
+                    <h2 id="list">列表</h2>
+                    <ul>
+                        <li>有序:ol 子标签 li</li>
+                        <li>无序:ul 子标签 li</li>
+                        <li>自定义:dl 头标签 dt 子标签 dd</li>
+                    </ul>
+                    <p>有序无序自定义</p>
+                    <p></p>
+                    <h2 id="link">链接</h2>
+                    <p>链接a href title</p>
+                    <p>链接和锚</p>
+                    <p>
+                        id = "aaa" href = "#aaa" <br />跨页面锚点 href
+                        ="https/index.html#aaa"
+                    </p>
+                    <p>url 协议 主机名 目录 文件名</p>
+                    <p>http超文本传输协议 ftp文件传输协议 file文件传输协议</p>
+                    <p>
+                        HTTP默认使用端口80,因此URL http://
+                        www.example.com:80/和http://www.example.com/等效.
+                    </p>
+                    <p>
+                        除大小写字母、数字0-9和下述符号外的字符:美元符号($
+                        ),连字符(-)、下划线(_)和句点(.)空格要使用字符编码%20
+                    </p>
+                    <p>属性rel</p>
+                    <p>
+                        如果URL以斜杠结尾,最后一部分将被视为目录名;使用这种URL时,获取的是HTTP服务器定义的指定目录中的默认文件——通常是文件index.html
+                        .如果您设计的网页是一个目录中的顶级文件,将其命名为index.html
+                        将是一个不错的注意.在目录中放置一个这样的文件还可防止用户浏览这个目录.
+                    </p>
+                    <h2 id="media">媒体</h2>
+                    <p>
+                        图像格式gif jpeg png svg <br />
+                        &lt;img src="image.png"
+                        alt="为无法显示图像时提供文字说明"&gt;
+                        图像对其用vertical-align
+                    </p>
+                    <p>
+                        图像的缩放&lt;img src="my_image.png" height="100"
+                        width="200" /&gt;
+                    </p>
+                    <p>
+                        图像映射&lt;map name=""&gt; &lt;area&gt;
+                        &lt;/area&gt;&lt;/map&gt;&lt;img&gt;<br />
+                        &lt;area shape="形状" coords="区域" href="链接"
+                        alt="提示"&gt;
+                    </p>
+                    <p>托管视频网站bilibili 视频和容器格式 编解码器</p>
+                    <p>
+                        嵌入视频&lt;vdio src="url" height="" width=""
+                        controls="是否提供控件" autoplay="自动播放"
+                        loop="循环播放" preload="布尔是否预加载视频"
+                        poster="视频预览图像" muted="布尔 是否静音"&gt;
+                    </p>
+                    <p>
+                        要提供多种格式的视频,可在标签&lt;video&gt;
+                        中嵌套一个&lt;source&gt; 元素&lt;/p&gt;视频播放器
+                    </p>
+                    <p>插入音频&lt;audio mediagroup="控制编组"&gt;</p>
+                    <div class="codediv">
+                        <pre><code class="language-html">
+&lt;video width="320" height="240" preload controls&gt;
+   &lt;source src="movie.mp4"
+     type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'&gt;
+   &lt;source src="movie.ogv"
+     type='video/ogg; codecs="theora, vorbis"'&gt;
+&lt;/video&gt;
+                    </code></pre>
+                    </div>
+                    <p>
+                        soruce 中可指定的编解码器type值 MP4/H.264 :video/mp4;
+                        codecs="avc1.42E01E, mp4a.40.2" . Ogg Theora :video/ogg;
+                        codecs="theora, vorbis" . WebM :video/webm; codecs="vp8,
+                        vorbis" .
+                    </p>
+                    <p>
+                        &lt;object&gt;&lt;param name=""
+                        value=""&gt;&lt;/object&gt;在HTML5中,您可能使用标签&lt;video&gt;
+                        而不是&lt;object&gt; 来嵌入视频,但标签&lt;object&gt;
+                        还将用于嵌入其他Flash电影和其他多媒体内容,如Microsoft
+                        Silverlight.
+                    </p>
+                    <h2 id="sheet">表格</h2>
+                    <div class="codediv">
+                        <pre><code class="language-html">
+&lt;table cellpadding="10" border="1" cellpadding="10"&gt;
+    &lt;caption&gt;
+        这是个表格
+    &lt;/caption&gt;
+    &lt;tr align="center"&gt;
+        &lt;th&gt;1&lt;/th&gt;
+        &lt;th&gt;2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;th&gt;3&lt;/th&gt;
+        &lt;th&gt;4&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;5&lt;/td&gt;
+        &lt;td&gt;6&lt;/td&gt;
+        &lt;td&gt;7&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+                    </code></pre>
+                    </div>
+                    <p>
+                        th 用于表头单元格 内容会居中粗体 <br />td
+                        用于表格数据<br />tr表示每一行将属性cellpadding
+                        设置为零,单元格边缘将与内容紧贴在一起 cellspacing
+                        影响整个表格的单元格间距
+                    </p>
+                    <p>details 下拉菜单栏 summary 栏目内容</p>
+                    <p>水平对齐 text-align 垂直对齐vertical-align</p>
+                    <p>
+                        有些较旧的浏览器显示这种空单元格时，就像它们不存在一样，连边框也不显示。
+                        如果您要显示真正的空单元格，可在单元格中包含一行换行符,border-collapse
+                        消除单元格之间的间隙,属性colspan和rowspan修改表格布局跨多行,元素colgroup和col
+                        为行编辑组，thead tfoot tbody
+                    </p>
+                    <h2 id="form">表单</h2>
+                    <div class="codediv">
+                        <pre><code class="language-html">
+&lt;form action="" method="post" autocomplete="off"&gt; 
+    &lt;label for="username"&gt; Username&lt;/label&gt; 
+    &lt;input type="text" name="username" value="Log In"&gt;
+&lt;/form&gt;
+                    </code></pre>
+                    </div>
+                    <p>
+                        性value
+                        用于设置提交按钮的标签；如果您没有指定，浏览器将显示默认标签。<br />属性type
+                        指定了要创建的控件的类型，这里分别是text
+                        和password,如果表单将修改服务器上的数据，务必使用方法post。
+                        如果表单只是请求数据（如搜索表单），务必使用方法get。
+                        如果要将表单提交结果设置为书签，务必使用方法get。输入属性for
+                        （这个属性的值必须与相应控件的属性id 或name 的值相同）
+                        属性minlength
+                        指定最少的字符数,如果您要告诉用户该输入什么样的值，但不又不希望这种说明与其他表单数据
+                        一起被提交，应转而使用属性placeholder,pattern="[0-9][A-Z]{3}"正则表达式匹配输入规则
+                    </p>
+                    <p>
+                        datalist头和option 数据列表 &lt;datalist id="game"&gt;
+                        &lt;option value="rock"&gt; &lt;datalist id="game"&gt;
+                        &lt;option value="one"&gt;Oone&lt;/option&gt; &lt;option
+                        value="two"&gt;Ttwo&lt;/option&gt; &lt;/datalist&gt;
+                        &lt;label for=""&gt;&lt;input list="game"
+                        /&gt;&lt;/label&gt;input 的type值还有其他属性可选 button
+                        元素 textarea 元素 select 元素 元素fieldset
+                        用于在Web浏览器中将表单控件编组。元素用于在字段集（filedset）中显示标题
+                        legend 组命名 progress meter
+                    </p>
+                </article>
+            </main>
+            <footer><p>QQ : 1564505714</p></footer>
+        </div>
+    </body>
+</html>
